@@ -1,0 +1,83 @@
+.tab-contents {
+    background: $background-color;
+}
+.rec-view{
+    .raidos,.playlists {
+        margin: 14px 0px 7px 10px;
+
+        .title {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 11px;
+                font-weight: normal;
+        }
+
+        .list {
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+
+            .list-item {
+                float: left;
+                width: 50%;
+                :first-child {
+                    margin-right: 8px;
+                }
+                .list_media {
+                    position: relative;
+                }
+
+                .icon_play {
+                    display: block;
+                    height: 24px;
+                    width: 24px;
+                    background: url('https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423') no-repeat;
+                    background-size: 24px 60px;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    z-index: 10;
+                    background-position: 0 0;
+                }
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                .list_info {
+                    color: #000;
+                    padding: 5px 0px 5px 7px;
+                    font-size: 14px;
+                    background: #fff;
+                    margin-right: 8px;
+
+                    .list_title {
+                        height: 36px;
+                        line-height: 18px;
+                        white-space: normal;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+
+
+            .list_distance {
+                margin-top: 14px;
+                .list_info {
+                    padding-bottom: 10px;
+                    .list_title {
+                        height: 60px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

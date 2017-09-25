@@ -1,0 +1,11 @@
+@import "reset";
+@import "var";
+@import "rec";
+@import "header";
+@import "slide";
+@import "navbar";
+@import "helpers";
+@import "rank";
+body {
+     background: $background-color;
+}

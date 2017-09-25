@@ -1,0 +1,33 @@
+.mod-nav {
+    display: flex;
+    background: #fff;
+    a {
+        flex-grow: 1;
+        display: block;
+        height: $mod-nav-height;
+        color: rgba(0, 0, 0, .6);
+        font-size: 16px;
+        line-height: $mod-nav-height;
+        text-align: center;
+        position: relative;
+
+        &.current {
+            color: $mod-nav-color;
+        }
+
+        &.current::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $mod-nav-color;
+        }
+    }
+
+
+
+
+}

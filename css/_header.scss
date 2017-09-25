@@ -1,0 +1,26 @@
+#header {
+    height: $header-height;
+    background: $header-background;
+    font: $font;
+    display: relative;
+    h1 {
+       display: none;
+    }
+    #logo {
+        height: $logo-height;
+        margin-left: 10px;
+        margin: 9px 0 0 10px;
+    }
+    .down-app {
+        position: absolute;
+        top:8px;
+        right: 10px;
+        height: 28px;
+        padding: 0 12px;
+        border-radius: 99px;
+        background: #149c5a;
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

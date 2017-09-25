@@ -1,0 +1,68 @@
+    {
+        "code":0,
+        "data":{"slider":[
+                            {"linkUrl":"https://y.qq.com/m/act/singchina2/index.html?ADTAG=jiaodiantu","picUrl":"http://y.gtimg.cn/music/photo_new/T003R720x288M000002eCw5B2onE2E.jpg","id":12139
+                            },
+                            {"linkUrl":"http://y.qq.com/m/act/sfhd/91.html?ADTAG=banner","picUrl":"http://y.gtimg.cn/music/photo_new/T003R720x288M000001NrE3G1g1Vs2.jpg","id":12161
+                            },
+                            {"linkUrl":"https://y.qq.com/m/client/taoge_collect/index.html?activityId=126","picUrl":"http://y.gtimg.cn/music/photo_new/T003R720x288M000003jrmhf1Gu7VM.jpg","id":12153
+                             },
+                            {"linkUrl":"https://y.qq.com/m/act/sfhd/92.html","picUrl":"http://y.gtimg.cn/music/photo_new/T003R720x288M0000009nd8G3oWW7j.jpg","id":12172
+                            },
+                            {"linkUrl":"https://c.y.qq.com/node/m/client/music_headline/index.html?_hidehd=1&_button=2&zid=256759","picUrl":"http://y.gtimg.cn/music/photo_new/T003R720x288M000003nxFdi4g99OX.jpg","id":12177
+                            }
+                        ],
+                "radioList":[
+                                {
+                                    "picUrl":"http://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg",
+                                    "Ftitle":"一人一首招牌歌","radioid":307
+                                },
+                                {
+                                    "picUrl":"http://y.gtimg.cn/music/photo/radio/track_radio_199_13_1.jpg",
+                                    "Ftitle":"热歌","radioid":199
+                                }
+                            ],
+                "songList":[
+                                {
+                                    "songListDesc": "你的爱豆今天发糖了吗？",
+                                    "picUrl": "https://p.qpic.cn/music_cover/bMoY206eicbphwEh4kRnrkY4z5LoaLuwNv9D5yh07wuS58xTpdX5kWQ/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "每日新歌：光之海，连通孤独的你",
+                                    "picUrl": "https://p.qpic.cn/music_cover/ibSiagqKjw1zfTgxY7F8CfE0TUngLEPpbo1vMCVAMNfiaiaaFPcAPD3o2g/300?n=1"
+                                },
+                                 {
+                                    "songListDesc": "发泄情绪100％：Tokyo涉谷夜店专用舞曲",
+                                    "picUrl": "https://p.qpic.cn/music_cover/KZXhqWFleib6haUmPFZXateJv4UYrZFNRt5SxkX7GcCjgHP2EvHeEHA/300?n=1"
+                                },
+                                 {
+                                    "songListDesc": "C.Y.Kong江志仁：无数经典港乐背后的大师",
+                                    "picUrl": "https://p.qpic.cn/music_cover/7nibdU75Y368rHg3ciaicZ08YH83taHaticv75scYf54SqWMsxP19eYA3Q/300?n=1"
+                                },
+                                 {
+                                    "songListDesc": "耳机里在下雨：融入雨声元素的华语歌",
+                                    "picUrl": "https://p.qpic.cn/music_cover/THH0ibUuods7d0TzchwBhoRbkJ5haLKCkviaDZcHe37IaYouwAHogsWg/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "Free Jazz | 天马行空：爵士乐的自由畅想",
+                                    "picUrl": "https://p.qpic.cn/music_cover/zWCNLN3V0q2gPozlT2JcfcG21zARINZprxsKpudNDYtrcia3q7JQk8A/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "【Doo-wop】以人声为律动的舒缓R&B",
+                                    "picUrl": "https://p.qpic.cn/music_cover/53Unr0jHFibpmKbAEqvT1UgDZIgFdLffjCXA1w1XtgDnXJw7PzYdWUQ/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "正到想私藏！不为人知的中国布鲁斯",
+                                    "picUrl": "https://p.qpic.cn/music_cover/OSAR0v6fibBw0icAxIk2EX0GUicOSCiadj4icKlg2aUN6uvRAurcND845Ag/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "『小酒馆』剑与魔法 · 旅途中的休憩时光",
+                                    "picUrl": "https://p.qpic.cn/music_cover/6XFhg7ldObzBw37HAkL9LjdBSSCuO9gJknj8hkcTyggT6924r1RENw/300?n=1"
+                                },
+                                {
+                                    "songListDesc": "深度睡眠 | 白噪音在你耳朵里下起了雨",
+                                    "picUrl": "https://p.qpic.cn/music_cover/ibntviciboJuwCoCNK8ibZkjekGCGYr8rzzBgxVTDlFiaZYWQBVmlIF1iaZw/300?n=1"
+                                }
+                            ]
+    }
+    }

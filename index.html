@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QQ 音乐</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+<body>
+   <!--  标签写错浪费了时间 -->
+    <header id = "header">
+        <h1>QQ音乐</h1>
+        <img src="images/logo.png" alt="logo" id="logo" />
+        <a href="javascript:void(0)" class="down-app">下载APP</a>
+    </header>
+    <nav class="mod-nav">
+        <a href="javascript:void(0)" class="current" data-role="tab" data-view=".rec-view">推荐</a>
+        <a href="javascript:void(0)" data-role="tab" data-view=".rank-view">排行榜</a>
+        <a href="javascript:void(0)" data-role="tab" data-view=".search-view">搜索</a>
+    </nav>
+    <div class="tab-contents">
+
+        <div class="rec-view tab-content">
+            <div id="qq-slider" class="swiper-container">
+            </div>
+            <div class="raidos ">
+                 <h2 class="title">电台</h2>
+                 <ul class="list">
+
+                 </ul>
+            </div>
+            <div class="playlists ">
+                <h2 class="title">热门歌单</h2>
+                <div class="list"></div>
+            </div>
+        </div>
+
+
+        <div id="rank" class="rank-view tab-content hide">
+            <ul class="toplist">
+            </ul>
+        </div>
+
+        <div class="search-view tab-content hide">
+            搜索
+        </div>
+
+
+
+
+    </div>
+    <script type="text/javascript" src="scripts/slide.js"></script>
+    <script type="text/javascript" src="scripts/tab.js"></script>
+    <script src="scripts/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/lazyload.js"></script>
+</body>
+</html>
