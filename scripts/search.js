@@ -112,7 +112,6 @@ export class Search {
     /*查找数据*/
     search(keyword, page){
         /*如果是true不会再次加载*/
-        this.loading();
         if (this.fetching) return
         this.fetching = true;
         this.keyword = keyword;
