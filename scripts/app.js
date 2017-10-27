@@ -22,8 +22,6 @@ function touchPlay(){
     let target = event.target;
     if(target.matches('.song-name') || target.matches('.song-artist') || target.matches('icon-music')){
         musicPlayer.$audio.play();
-        console.log(target)
-        alert(123)
     }
 
 }
