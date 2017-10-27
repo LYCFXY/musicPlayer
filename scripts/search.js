@@ -91,8 +91,8 @@ export class Search {
         if(!keyword){ return this.reset()}
         if(event.keyCode == '13'){
             this.$songs.innerHTML = '';
-            this.search(keyword);
             this.hideHistory();
+            this.search(keyword);
             this.historyLs.recordHistory(keyword);
         }
         if(event.keyCode !== '13'){return}
@@ -124,9 +124,9 @@ export class Search {
     search(keyword, page){
         /*如果是true不会再次加载*/
         if (this.fetching) return
-        this.loading();
         this.fetching = true;
         this.keyword = keyword;
+        this.loading();
         /*如果传入page就使用page， 如果没有就使用this.page*/
         fetch(searchUrl(this.keyword, page || this.page))
         .then(res => {
@@ -155,7 +155,10 @@ export class Search {
 
     loading(){
         this.$loading.style.display = 'block';
-        alert(123)
+        var timer = setInterval(() => {
+            this.$loading.style.display = 'none';
+            alert("网络不好，请重新搜索")
+        }, 10000)
     }
 
     append(songs){
