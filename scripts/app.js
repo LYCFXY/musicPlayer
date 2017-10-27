@@ -15,13 +15,17 @@ show.addEventListener('click',() => {
      musicPlayer.show();
 });
 
-document.getElementById('song-list').addEventListener('touchstart', touchPlay)
+var songList = document.getElementById('song-list')
+songList.addEventListener('touchend', touchPlay)
 
 function touchPlay(){
     let target = event.target;
-    if(target.matches('.song-item')){
+    if(target.matches('.song-name') || target.matches('.song-artist') || target.matches('icon-music')){
         musicPlayer.$audio.play();
+        console.log(123)
+        console.log(target)
     }
+
 }
 
 function onHashChange(){
