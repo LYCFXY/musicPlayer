@@ -46,7 +46,7 @@ export class Search {
             this.$loading.style.display = 'none';
             return
          };
-        if(this.$songs.length == 0){
+        if(this.$songs.children.length == 0){
             this.$complete.style.display = 'none';
         }
         /*加载下一页*/
@@ -72,6 +72,9 @@ export class Search {
     }
 
     focus(){
+        if(this.$songs.children.length == 0){
+            this.$complete.style.display = 'none';
+        }
         this.$cancel.style.display = 'block';
         this.showHistory();
     };
@@ -178,7 +181,7 @@ export class Search {
         }
 
         /*搜索歌曲数量过少时*/
-        if(this.$songs.children.length < 10){
+        if(this.$songs.children.length < 10 && this.$songs.children.length > 0){
             this.$complete.style.display = 'block';
             window.removeEventListener('scroll', this.onscroll);
             this.$loading.style.display = 'none';

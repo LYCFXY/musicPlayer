@@ -54,7 +54,6 @@ export class IsHistory {
 
     /*写入浏览记录*/
     recordHistory(keyword){
-
             event.preventDefault();
             event.stopPropagation();
             let inputVal = keyword;
