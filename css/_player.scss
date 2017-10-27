@@ -159,7 +159,6 @@
                                 height: 19px;
                                 margin: 13px 0 0 16px;
                                 background-position: 0 -150px;
-
                                 background-image: url(//y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007);
                                 background-repeat: no-repeat;
                                 background-size: 40px 350px;
@@ -188,14 +187,14 @@
         height: 154px;
         .pack-up {
             position: absolute;
-            bottom: 114px;
+            bottom: 124px;
             overflow: hidden;
             right: 15px;
             width: 25px;
-            height: 21px;
-            background-image: url(//y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007);
+            height: 25px;
+            background-image: url(../images/hidden.png);
             background-repeat: no-repeat;
-            background-size: 40px 350px;
+            background-size: 25px 25px;
         }
         .progress {
             position: absolute;

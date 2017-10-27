@@ -47,7 +47,6 @@ export class MusicPlayer {
 
         /*audio的方法*/
         this.$audio.play();
-        alert(123)
         this.lyrics.start();
         this.progress.start();
 
