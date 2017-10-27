@@ -127,6 +127,7 @@ export class Search {
         this.fetching = true;
         this.keyword = keyword;
         this.loading();
+        clearInterval(timer)
         /*如果传入page就使用page， 如果没有就使用this.page*/
         fetch(searchUrl(this.keyword, page || this.page))
         .then(res => {
