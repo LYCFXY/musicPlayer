@@ -56,7 +56,7 @@ export class Search {
     }
 
     showHistory(){
-        if(this.$historyItem.children.length > 0 && this.$songs.children.length == 0){
+        if(this.$historyItem.children.length > 0 && this.$songs.children.length == 0 && !this.fetching){
             this.$searchHistory.style.display = 'block';
         }
     }
