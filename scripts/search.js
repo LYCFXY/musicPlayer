@@ -46,7 +46,7 @@ export class Search {
             this.$loading.style.display = 'none';
             return
          };
-        if(this.nomore && this.$songs.length == 0){
+        if(this.$songs.length == 0){
             this.$complete.style.display = 'none';
         }
         /*加载下一页*/
