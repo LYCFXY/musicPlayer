@@ -46,6 +46,9 @@ export class Search {
             this.$loading.style.display = 'none';
             return
          };
+        if(this.nomore && this.$songs.length == 0){
+            this.$complete.style.display = 'none';
+        }
         /*加载下一页*/
         if(document.documentElement.clientHeight + pageYOffset > document.body.scrollHeight - 50){
             this.search(this.keyword, this.page + 1);
@@ -80,6 +83,7 @@ export class Search {
         var keyword = event.target.value.trim();
         if(!keyword){ return this.reset()}
         if(event.keyCode == '13'){
+            this.$songs.innerHTML = '';
             this.search(keyword);
             this.hideHistory();
             this.historyLs.recordHistory(keyword);
@@ -113,6 +117,7 @@ export class Search {
     search(keyword, page){
         /*如果是true不会再次加载*/
         if (this.fetching) return
+        this.loading();
         this.fetching = true;
         this.keyword = keyword;
         /*如果传入page就使用page， 如果没有就使用this.page*/
