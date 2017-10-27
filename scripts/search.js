@@ -153,8 +153,10 @@ export class Search {
         .catch( () => this.fetching = false)
     }
 
-    loading(){
+    loading(e){
+        e.stopPropagation();
         this.$loading.style.display = 'block';
+        alert(123)
     }
 
     append(songs){
