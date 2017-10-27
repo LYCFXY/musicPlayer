@@ -40,11 +40,6 @@ function onHashChange(){
     }
 }
 
- this.$songs
-document.addEventListener('touchstart', function () {
-  document.getElementsByTagName('audio')[0].play();
-  document.getElementsByTagName('audio')[0].pause();
-});
 /*刷新是立即解析*/
 onHashChange()
 window.addEventListener('hashchange', onHashChange);
