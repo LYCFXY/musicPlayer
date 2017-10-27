@@ -127,7 +127,6 @@ export class Search {
         this.fetching = true;
         this.keyword = keyword;
         this.loading();
-        clearInterval(timer)
         /*如果传入page就使用page， 如果没有就使用this.page*/
         fetch(searchUrl(this.keyword, page || this.page))
         .then(res => {
@@ -156,10 +155,6 @@ export class Search {
 
     loading(){
         this.$loading.style.display = 'block';
-        var timer = setInterval(() => {
-            this.$loading.style.display = 'none';
-            alert("网络不好，请重新搜索")
-        }, 10000)
     }
 
     append(songs){
