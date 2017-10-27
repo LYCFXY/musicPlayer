@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>QQ 音乐</title>
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 <body>
-   <!--  标签写错浪费了时间 -->
     <header id = "header">
         <h1>QQ音乐</h1>
         <img src="images/logo.png" alt="logo" id="logo" />
-        <a href="javascript:void(0)" class="down-app">下载APP</a>
+        <a href="javascript:void(0)" class="down-app">播放器</a>
     </header>
     <nav class="mod-nav">
         <a href="javascript:void(0)" class="current" data-role="tab" data-view=".rec-view">推荐</a>
@@ -22,19 +23,19 @@
     </nav>
     <div class="tab-contents">
 
-        <div class="rec-view tab-content">
-            <div id="qq-slider" class="swiper-container">
-            </div>
-            <div class="raidos ">
-                 <h2 class="title">电台</h2>
-                 <ul class="list">
+        <div id="rec-view" class="rec-view tab-content">
+                <div id="qq-slider" class="swiper-container">
+                </div>
+                <div class="raidos ">
+                     <h2 class="title">电台</h2>
+                     <ul class="list">
 
-                 </ul>
-            </div>
-            <div class="playlists ">
-                <h2 class="title">热门歌单</h2>
-                <div class="list"></div>
-            </div>
+                     </ul>
+                </div>
+                <div class="playlists">
+                    <h2 class="title">热门歌单</h2>
+                    <div class="list"></div>
+                </div>
         </div>
 
 
@@ -43,18 +44,96 @@
             </ul>
         </div>
 
-        <div class="search-view tab-content hide">
-            搜索
+        <div id="search-view" class="search-view tab-content hide">
+            <div class="search-bar" >
+                <div class="input-wrap">
+                        <input id="search" type="text" placeholder="搜索歌曲、歌单、专辑" />
+                        <span class="icon-search"></span>
+                </div>
+                <div class="cancel-btn">取消</div>
+            </div>
+
+            <div id="search-history" class="search-history">
+                <div class=".search-history-content">
+                    <ul class="history-item">
+                        <!-- <li class="history-list">
+                            <a class="list-link" href="#">
+                                <span class="icon"></span>
+                                <span class="history-name ellipsis">这是一条搜索记录</span>
+                                <span class="single-remove" data-text="${val}"></span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="remove">清除历史搜索</div>
+            </div>
+
+            <div class="search-results">
+                <ul class="song-list">
+                </ul>
+            </div>
+
+            <div class="loading" >
+                <i class="loading-icon"></i>
+                <span class="loading-text">正在载入更多...</span>
+            </div>
+            <p class="load-complete">已加载全部</p>
+
+
         </div>
-
-
-
-
     </div>
-    <script type="text/javascript" src="scripts/slide.js"></script>
-    <script type="text/javascript" src="scripts/tab.js"></script>
+    <div id="player">
+        <div class="main-box">
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="flex-box">
+                        <div class="song-info-wrap">
+                            <span class="singer-img-box">
+                                <img src="" class="singer-img" />
+                            </span>
+                            <div class="song-info">
+                                <h2 class="song-name ellipsis"></h2>
+                                <p class="singer-name ellipsis"></p>
+                            </div>
+                            <a class="icon icon-play" href="javascript:;">
+
+                            </a>
+                        </div>
+                        <div class="flex-item">
+                            <div class="lyric">
+                                <div class="lyric-box">
+                                    <!-- <div class="lyric-txt">
+                                        <div class="ellipsis lyric-line">这是歌词这是歌词这是歌词这是歌词这是歌词这是歌词这是歌词这是歌词这是歌词</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+        <div class="pack-up"></div>
+           <div class="progress">
+               <!-- <div class="progress-box">
+                  <div class="progress-bar">
+                      <div class="progress-bar-progress">
+                  </div>
+                  </div>
+               </div>
+               <span class="progress-start">01:51</span>
+               <span class="progress-end">05:06</span> -->
+           </div>
+        </div>
+        <div class="down">
+            <a href="#" class="download">下载这首歌</a>
+        </div>
+        <div class="background"></div>
+        <div class="mask"></div>
+    </div>
+
     <script src="scripts/swiper-3.4.2.min.js"></script>
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/lazyload.js"></script>
+    <script src="dist/app.js"></script>
+
 </body>
 </html>

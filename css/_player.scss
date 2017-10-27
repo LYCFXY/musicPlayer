@@ -1,0 +1,279 @@
+
+#player{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+    z-index: 99;
+    display: none;
+    .background {
+        background-image: url("https://y.gtimg.cn/music/photo_new/T002R150x150M00000347q1x2J7ddn.jpg?max_age=2592000");
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom center;
+        -webkit-filter: blur(15px);
+    }
+    .mask {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.6;
+    }
+    .main-box {
+        position: absolute;
+        top: 0;
+        bottom: 154px;
+        z-index: 3;
+        width: 100%;
+        .slider {
+            width: 200%;
+            height: 100%;
+            .slider-item {
+                position: relative;
+                float: left;
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                .flex-box {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    .flex-item {
+                        flex: 1;
+                        position: relative;
+                        .lyric {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            width: 100%;
+                            .lyric-box {
+                                overflow: hidden;
+                                position: relative;
+                                width: 100%;
+                                height: 336px;
+                                @media screen and (max-height: 568px) and (min-height: 480px) {
+                                    height: 252px;
+                                }
+                                .lyric-txt {
+                                    position: absolute;
+                                    left: 10px;
+                                    right: 10px;
+                                    overflow: hidden;
+                                    .lyric-line {
+                                        height: 42px;
+                                        line-height: 42px;
+                                        font-size: 16px;
+                                        color: rgba(255, 255, 255, .6);
+                                        text-align: center;
+                                    }
+                                    .active {
+                                        color: $mod-nav-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .song-info-wrap {
+                        position: relative;
+                        display: flex;
+                        padding: 15px 80px 15px 15px;
+                        background: rgba(0, 0, 0, .1);
+
+                        .singer-img-box {
+                            position: relative;
+                            display: block;
+                            width: 80px;
+                            height: 80px;
+                            @media screen and (max-height: 568px) and (min-height: 480px) {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            margin-right: 15px;
+                            overflow: hidden;
+                            .singer-img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 2;
+                                width: 100%;
+                                background-size: cover;
+                            }
+                        }
+                        .song-info {
+                            display: flex;
+                            flex: 1;
+                            flex-direction: column;
+                            justify-content: center;
+                            position: relative;
+                            overflow: hidden;
+                            background: none;
+                            .song-name {
+                                position: relative;
+                                height: 30px;
+                                overflow: hidden;
+                                font-size: 18px;
+                                font-weight: normal;
+                                color: #fff;
+                            }
+                            .singer-name {
+                                height: 21px;
+                                font-size: 14px;
+                                color: #fff;
+                                margin: 0;
+                            }
+                        }
+                        .icon {
+                            position: absolute;
+                            top: 50%;
+                            right: 25px;
+                            width: 43px;
+                            height: 43px;
+                            margin-top: -22px;
+                            border: solid 1px #fff;
+                            border-radius: 999px;
+                            background: rgba(0,0,0,.1);
+                            opacity: .6;
+                            &::after{
+                                content: "";
+                                display: block;
+                                width: 17px;
+                                height: 19px;
+                                margin: 13px 0 0 16px;
+                                background-position: 0 -150px;
+
+                                background-image: url(//y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007);
+                                background-repeat: no-repeat;
+                                background-size: 40px 350px;
+                            }
+                        }
+
+                        .icon-play::after {
+                            background-position: 0 -150px;
+                            margin: 12px 0 0 15px;
+                        }
+                        .icon-pause::after {
+                            background-position: 0 -180px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .control {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        height: 154px;
+        .pack-up {
+            position: absolute;
+            bottom: 114px;
+            overflow: hidden;
+            right: 15px;
+            width: 25px;
+            height: 21px;
+            background-image: url(//y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007);
+            background-repeat: no-repeat;
+            background-size: 40px 350px;
+        }
+        .progress {
+            position: absolute;
+            bottom: 74px;
+            width: 100%;
+            height: 40px;
+
+            display: flex;
+            .progress-start,.progress-end {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                width: 55px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .progress-start {
+                left: 0;
+            }
+            .progress-end {
+                right: 0;
+            }
+            .progress-box {
+                position: absolute;
+                top: 0;
+                left: 55px;
+                right: 55px;
+                height: 40px;
+                overflow: hidden;
+                .progress-bar {
+                    width: 100%;
+                    height: 2px;
+                    background: rgba( 255, 255, 255, 0.2);
+                    position: absolute;
+                    top: 19px;
+                    .progress-bar-progress {
+                        transform: translateX(-100%);
+                        width: 100%;
+                        height: 2px;
+                        background: $mod-nav-color;
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .down {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        width: 100%;
+        height: 65px;
+        .download {
+            position: relative;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            margin: 0 50px;
+            padding: 0 55px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 999px;
+            background-color: $mod-nav-color;
+            text-align: center;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 33px;
+                height: 33px;
+
+                background: url(//y.gtimg.cn/mediastyle/mobile/app/share/img/sprite_play.png?max_age=2592000&d=20151203183007) 0px -300px no-repeat;
+                background-size: 40px 350px;
+            }
+        }
+    }
+}

@@ -1,11 +1,9 @@
-class Slider {
+export class Slider {
     constructor(options={}){
-        console.log(options)
-        this.wrap = document.querySelector('#qq-slider')
-        this.$el = options.el
-        this.slides = options.slides
+        this.wrap = document.querySelector('#qq-slider');
+        this.$el = options.el;
+        this.slides = options.slides;
         this.render();
-
     }
 
     render (){
@@ -21,7 +19,7 @@ class Slider {
                             <img src="${slide.image}" style="width:${this.deviceWidth}px" />
                         </a>
             </div>`
-        ).join('')
+        ).join('');
 
     }
 

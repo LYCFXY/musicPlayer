@@ -6,6 +6,14 @@
 @import "navbar";
 @import "helpers";
 @import "rank";
+@import "search";
+@import "player";
+
 body {
      background: $background-color;
+     font: 12px/1.5 "hiragino sans gb",arial;
+     color: #808080;
+}
+.noscroll {
+    overflow: hidden;
 }

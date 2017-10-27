@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "webpack -p",
+    "server": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,18 @@
   },
   "homepage": "https://github.com/LYCFXY/qq-music#readme",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.15.4",
     "nodemon": "^1.12.1",
     "request": "^2.82.0",
     "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "node-sass": "^4.5.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }

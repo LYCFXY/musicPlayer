@@ -1,7 +1,6 @@
-
-function lazyload(images) {
+export function lazyload(images) {
     /*图片转为数组*/
-    let imgs = [].slice.call(images)
+    let imgs = [].slice.call(images || document.querySelectorAll('.lazyload'));
 
     let onscroll =  throttle(function () {
         /*console.log(new Date())*/
