@@ -9,11 +9,20 @@ let search = new Search(document.querySelector('#search-view'));
 let toplist = new TopList(document.querySelector('#rank')).launch();
 /*音乐播放*/
 let musicPlayer = new MusicPlayer(document.querySelector('#player'));
-let show = document.querySelector('#header .down-app');
 
+let show = document.querySelector('#header .down-app');
 show.addEventListener('click',() => {
      musicPlayer.show();
 });
+
+document.getElementById('song-list').addEventListener('touchstart', touchPlay)
+
+function touchPlay(){
+    let target = event.target;
+    if(target.matches('.song-item')){
+        musicPlayer.$audio.play();
+    }
+}
 
 function onHashChange(){
     let hash = location.hash;
@@ -30,6 +39,12 @@ function onHashChange(){
         musicPlayer.hide();
     }
 }
+
+ this.$songs
+document.addEventListener('touchstart', function () {
+  document.getElementsByTagName('audio')[0].play();
+  document.getElementsByTagName('audio')[0].pause();
+});
 /*刷新是立即解析*/
 onHashChange()
 window.addEventListener('hashchange', onHashChange);
