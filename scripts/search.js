@@ -153,8 +153,7 @@ export class Search {
         .catch( () => this.fetching = false)
     }
 
-    loading(e){
-        e.stopPropagation();
+    loading(){
         this.$loading.style.display = 'block';
         alert(123)
     }
