@@ -75,7 +75,6 @@ export class Search {
         /*解决ios touch兼容事件*/
         if(this.$songs.children.length == 0){
             this.$complete.style.display = 'none';
-            alert(123)
         }
         if(this.$songs.children.length == 0){
            this.$loading.style.display = 'none';
