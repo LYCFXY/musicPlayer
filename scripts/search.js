@@ -5,7 +5,7 @@ export class Search {
     constructor(el){
         this.$el = el;
         this.$input = this.$el.querySelector('#search');
-        this.$songs = this.$el.querySelector('.song-list');
+        this.$songs = this.$el.getElementById('song-list');
         this.$cancel = this.$el.querySelector('.cancel-btn');
         this.$complete = this.$el.querySelector('.load-complete');
         this.$loading = this.$el.querySelector('.loading');
@@ -56,8 +56,6 @@ export class Search {
     }
 
     showHistory(){
-        this.$loading.style.display = 'none';
-        this.$loading.style.display = 'none';
         if(this.$historyItem.children.length > 0 && this.$songs.children.length == 0 && !this.fetching){
             this.$searchHistory.style.display = 'block';
         }
@@ -122,6 +120,13 @@ export class Search {
         this.hideHistory();
     }
 
+    hideAll(){
+        if(document.getElementById('song-list').children.length = 0){
+            this.$complete.style.display = 'none';
+            this.$loading.style.display = 'none';
+        }
+    }
+
     /*查找数据*/
     search(keyword, page){
         /*如果是true不会再次加载*/
@@ -153,6 +158,7 @@ export class Search {
         .then(songs => this.append(songs))
         .then(() => this.fetching = false)
         .catch( () => this.fetching = false)
+        hideAll()
     }
 
     loading(){
