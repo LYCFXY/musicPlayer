@@ -57,6 +57,7 @@ export class Search {
 
     showHistory(){
         this.$loading.style.display = 'none';
+        this.$loading.style.display = 'none';
         if(this.$historyItem.children.length > 0 && this.$songs.children.length == 0 && !this.fetching){
             this.$searchHistory.style.display = 'block';
         }
