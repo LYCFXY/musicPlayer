@@ -9,6 +9,7 @@ export class MusicPlayer {
         this.$audio = this.createAudio();
         this.progress = new ProgressBar(this.$el.querySelector('.progress'), 280, true);
         this.lyrics = new LyricsPlayer(this.$el.querySelector('.lyric-box'), this.$audio);
+        this.$input = document.querySelector('#search');
     }
 
     /*创建播放器标签*/
@@ -44,7 +45,7 @@ export class MusicPlayer {
 
     /*开始播放*/
     onPlay(event){
-
+        this.$input.value = '';
         /*audio的方法*/
         this.$audio.play();
         this.lyrics.start();
