@@ -37,9 +37,6 @@ function onHashChange(){
         }, {});
         musicPlayer.play(options);
         search.reset();
-        if(this.$songs.children.length == 0){
-           search.$loading.style.display = 'none';
-        }
     } else {
         musicPlayer.hide();
     }
